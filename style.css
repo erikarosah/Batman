@@ -8,3 +8,58 @@
     text-decoration: none;
     font-family: "Poppins", sans-serif;
 }
+
+:root {
+    font-size: 62.5%;
+    --bg-color: #121212;
+    --text-color: #E6E3E3;
+    --red: #D60025
+}
+
+header {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: var(--bg-color) ;
+}
+
+nav {
+    display: flex;
+    gap: 4rem;
+    padding: 0 2rem;
+}
+
+li {
+    position: relative;
+}
+
+li a{
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--red);
+    transition: 0.4s all linear;
+}
+
+a:hover::after,
+.home-active::after {
+    width: 100%;
+}
+
+.menu-icon {
+    color: var(--text-color);
+    display: none;
+}
