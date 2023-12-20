@@ -6,6 +6,7 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
 }
 
@@ -109,6 +110,8 @@ a:hover::after,
 
 section {
     padding: 3rem 0;
+    height: auto;
+    min-height: 100vh;
     background: var(--bg-color);
 }
 
@@ -116,10 +119,6 @@ section h2 {
     padding: 2rem;
     font-size: 2.5rem;
     color: var(--text-color);
-}
-
-.swiper {
-    height: 100vh;
 }
 
 .swiper-slide div{
@@ -155,4 +154,58 @@ section h2 {
     text-align: center;
 
     color: var(--text-color);
+}
+
+
+#galery div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+}
+
+#galery div video {
+    width: 55%;
+    height: auto;
+}
+
+.about {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    color: var(--text-color);   
+}
+
+.about p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.about div {
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.about div span {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.galery-photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem 1rem;
+}
+
+.galery-photos img {
+    width: 45%;
+    height: auto;
+    transition: transform 0.2s;
+}
+
+.galery-photos img:hover {
+    transform: scale(1.01);
 }
