@@ -108,8 +108,7 @@ a:hover::after,
     text-transform: uppercase;
 }
 
-section {
-    padding: 3rem 0;
+section {    padding: 2rem 0 0 0;
     height: auto;
     min-height: 100vh;
     background: var(--bg-color);
@@ -291,4 +290,91 @@ footer {
 .bxl-linkedin-square{
     font-size: 1.8rem;
     color: var(--bg-color);
+}
+
+@media (max-width: 1024px) {
+    .banner img{
+        height: 50vh;
+    }
+}
+
+@media (max-width: 834px) {
+    #galery div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about div span{
+        display: none;
+    }
+
+    .swiper-slide div {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .swiper-slide div div img{
+        display: none;
+    }
+
+    #galery div video {
+        width: 80%;
+        height: auto;
+    }
+
+    .galery-photos img {
+        width: 80%;
+        height: auto;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .swiper-slide div span{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 688px) {
+    .details {
+        display: none;
+    }
+
+    header img {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 418px) {
+   section h2 {
+    font-size: 1.8rem;
+   }
+
+   #galery div video {
+    width: 90%;
+    height: auto;
+    }
+
+   .comments .card-comment {
+    max-width: 80%;
+    height: auto;
+    }
+
+    .about p {
+        font-size: 1.4rem;
+    }
+
+    #comments {
+        text-align: center;
+    }
+
+    nav ul li a{
+        font-size: 1.4rem;
+    }
 }
