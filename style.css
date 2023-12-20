@@ -209,3 +209,62 @@ section h2 {
 .galery-photos img:hover {
     transform: scale(1.01);
 }
+
+#comments span {
+    padding: 0 2rem;
+    font-size: 1.4rem;
+    color: #989fa5;
+}
+
+#comments div span {
+    font-size: 5rem;
+    color: var(--text-color);
+}
+
+#comments div span i {
+    font-size: 20px;
+    color: yellow;
+}
+
+.comments {
+    min-height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.comments .card-comment {
+    width: 350px;
+    height: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1rem;
+
+    background-color: var(--text-color);
+}
+
+.card-comment  div{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card-comment div p{
+    font-size: 1.2rem;
+    color: var(--bg-color);
+}
+
+.card-comment div img {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.card-comment p {
+    line-height: 20px;
+    color: var(--bg-color);
+}
